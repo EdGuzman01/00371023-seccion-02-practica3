@@ -1,0 +1,31 @@
+.my-element {
+  height: 100px;
+  background-color: var(--pink, lightpink);
+  color: var(--white, white);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.my-element-animate {
+  width: 30%;
+  height: 50px;
+  background-color: var(--blue, lightblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  animation: slideIn 3s ease-in-out;
+}
+
+/* Definición de la animación */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

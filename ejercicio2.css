@@ -1,0 +1,35 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --pink: #e12afb;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--white);
+}
+
+.box {
+  display: flex;
+  background-color: var(--pink);
+  flex-direction: row; /* Alinear en fila */
+  flex-wrap: wrap;     /* Que se bajen si no caben */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.box div {
+  margin: 10px 5px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  width: 33%; /* cada div ocupa 1/3 */
+}
+
+.box div:first-child {
+  width: 64%; /* el primero ocupa más espacio */
+}

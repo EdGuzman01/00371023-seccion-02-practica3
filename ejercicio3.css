@@ -1,0 +1,31 @@
+.item-a {
+  grid-area: header;
+  background-color: var(--blue, lightblue);
+}
+
+.item-b {
+  grid-area: main;
+  background-color: var(--pink, lightpink);
+}
+
+.item-c {
+  grid-area: sidebar;
+  background-color: var(--blue, lightsteelblue);
+}
+
+.item-d {
+  grid-area: footer;
+  background-color: var(--green, lightgreen);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+  gap: 10px; /* Espaciado entre elementos */
+  padding: 10px;
+}
