@@ -1,4 +1,5 @@
 Guía de Laboratorio III – Programación Web (CSS Avanzado)
+
 ✅ Ejercicio 1 – Variables CSS
 
 Pregunta: ¿Cuál es el objetivo de usar variables en CSS?
